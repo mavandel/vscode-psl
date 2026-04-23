@@ -2,7 +2,7 @@
   "name": "vscode-psl",
   "displayName": "vscode-psl",
   "description": "Profile Scripting Language support",
-  "version": "2.0.0-rc0",
+  "version": "2.0.1",
   "preview": false,
   "publisher": "ing-bank",
   "type": "module",
@@ -290,6 +290,11 @@
       {
         "command": "psl.previewDocumentation",
         "title": "Preview Documentation",
+        "category": "PSL"
+      },
+      {
+        "command": "psl.generateMarkdown",
+        "title": "Generate Markdown from PSL",
         "category": "PSL"
       }
     ],
@@ -582,6 +587,11 @@
         {
           "when": "resourceLangId == profileColumn",
           "command": "psl.refreshTable",
+          "group": "PSL.1"
+        },
+        {
+          "when": "resourceLangId == psl",
+          "command": "psl.generateMarkdown",
           "group": "PSL.1"
         }
       ],
