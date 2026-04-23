@@ -324,6 +324,7 @@ const DIR_MAPPINGS = {
 	"BATCH": "dataqwik/batch",
 	"COL": "",
 	"DAT": "data",
+	"serial": "data",
 	"FKY": "dataqwik/foreign_key",
 	// "G": "Global",
 	"IDX": "dataqwik/index",
